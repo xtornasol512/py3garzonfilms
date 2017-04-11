@@ -1,2 +1,1 @@
-web: gunicorn ./garzonfilms/garzonfilms.wsgi --log-file -
-
+web: sh -c 'cd garzonfilms && gunicorn garzonfilms.wsgi:application'

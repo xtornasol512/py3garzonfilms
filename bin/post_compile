@@ -1,0 +1,9 @@
+# !/usr/bin/env bash
+# This script executes migrations automatically after deployment to Heroku
+
+if [ $AUTO_MIGRATE == True ]; then
+  echo "=> Performing database migrations..."
+  python garzonfilms/manage.py migrate
+else
+  echo "=> Automatic migrations off! ... Not doing anything ..."
+fi
