@@ -1,5 +1,7 @@
 # Django Settings
 import os
+# To transform strings from environment variables to boolean values
+import ast
 # heroku apps
 import dj_database_url
 
@@ -11,13 +13,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'qvzbyw^dy74e-ahtb*olhs-7n=c1@+@=c-e1#lf@osr=j7jknz'
+SECRET_KEY = os.environ('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = ast.literal_eval(os.environ['DEBUG_STATE'])
 
 ALLOWED_HOSTS = [*]
 
+PRODUCTION = ast.literal_eval(os.environ['PRODUCTION'])
 
 # Application definition
 
