@@ -4,5 +4,7 @@ temp/
 *.db
 .venv/
 config/
+*.sqlite3
+*/__pycache__/
 
 
