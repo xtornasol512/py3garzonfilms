@@ -2,4 +2,7 @@
 *.pyc
 temp/
 *.db
+.venv/
+config/
+
 
