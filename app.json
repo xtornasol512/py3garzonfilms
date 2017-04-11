@@ -1,0 +1,36 @@
+{
+  "name": "py3garzonfilms",
+  "description": "Py3 GarzonFilms project",
+  "scripts": {
+    "postdeploy": "bin/setup_heroku"
+  },
+  "env": {
+    "DEBUG_STATE": "False",
+    "DISABLE_COLLECTSTATIC": 1,
+    "DEV_EMAIL": {
+      "generator": "secret"
+    },
+    "DJANGO_SECRET_KEY": {
+      "generator": "secret"
+    },
+    "PAPERTRAIL_API_TOKEN": {
+      "generator": "secret"
+    },
+    "PRODUCTION": {
+      "generator": "secret"
+    },
+    "REDISTOGO_URL": {
+      "generator": "secret"
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "papertrail",
+    "heroku-postgresql",
+    "redistogo"
+  ],
+  "buildpacks": [
+
+  ]
+}

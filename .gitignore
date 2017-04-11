@@ -2,4 +2,9 @@
 *.pyc
 temp/
 *.db
+.venv/
+config/
+*.sqlite3
+*/__pycache__/
+garzonfilms/staticfiles/
 
