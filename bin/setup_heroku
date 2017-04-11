@@ -8,4 +8,4 @@ else
   echo "=> Automatic migrations off! ... Not doing anything ..."
 fi
 
-python garzonfilms/manage.py collecstatic
+python garzonfilms/garzonfilms/manage.py collectstatic --noinput

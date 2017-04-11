@@ -6,6 +6,7 @@
   },
   "env": {
     "DEBUG_STATE": "False",
+    "DISABLE_COLLECTSTATIC": 1,
     "DEV_EMAIL": {
       "generator": "secret"
     },
