@@ -69,7 +69,7 @@ WSGI_APPLICATION = 'garzonfilms.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
+DATABASES = {}
 if DEBUG:
     DATABASES = {
         'default': {
