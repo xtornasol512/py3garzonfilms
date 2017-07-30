@@ -87,11 +87,10 @@
 
     <script src="{% static "js/vendor/jquery.js" %}"></script>
     <script src="{% static "js/foundation.min.js" %}"></script>
-    <script src="{% static "js/site/home.js" %}"></script>
     <script src="{% static "js/site/codiguito.js" %}"></script>
-    {% include "blocks/script_block_home.html" %}
-    {% block jsblock %}
 
+    {% block jsblock %}
     {% endblock jsblock %}
+    {% include "blocks/script_block_home.html" %}
   </body>
 </html>
