@@ -42,8 +42,8 @@
     <meta name="apple-mobile-web-app-title" content="Garzon Films">
     <meta name="application-name" content="Garzon Films">
     <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="msapplication-TileImage" content="/img/icons/mstile-144x144.png">
-    <meta name="msapplication-config" content="/img/icons/browserconfig.xml">
+    <meta name="msapplication-TileImage" content="/static/img/icons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/static/img/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
@@ -87,8 +87,8 @@
 
     <script src="{% static "js/vendor/jquery.js" %}"></script>
     <script src="{% static "js/foundation.min.js" %}"></script>
-    <script src="{% static "js/home.min.js" %}"></script>
-    <script src="{% static "js/codiguito.min.js" %}"></script>
+    <script src="{% static "js/site/home.js" %}"></script>
+    <script src="{% static "js/site/codiguito.js" %}"></script>
     {% include "blocks/script_block_home.html" %}
     {% block jsblock %}
 
