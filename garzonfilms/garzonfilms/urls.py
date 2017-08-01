@@ -20,8 +20,8 @@ from home.views import hola, about, work, contact
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', hola, name='home'),
-    url(r'^$', about, name='about'),
-    url(r'^$', work, name='work'),
-    url(r'^$', contact, name='contact'),
+    url(r'^about$', about, name='about'),
+    url(r'^work$', work, name='work'),
+    url(r'^contact$', contact, name='contact'),
 
 ]
