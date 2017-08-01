@@ -2,6 +2,7 @@
 {% load staticfiles %}
 <html class="no-js" lang="en">
   <head>
+    {% include "blocks/tag_manager_header.html" %}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}Garzon Films{% endblock title %}</title>
@@ -47,6 +48,7 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
+  {% include "blocks/tag_manager_body.html" %}
 
   <nav class="menu-padding">
       <div class="row text-center">
