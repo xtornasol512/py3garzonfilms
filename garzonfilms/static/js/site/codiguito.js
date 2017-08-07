@@ -15,3 +15,6 @@ function animationHover(element, animation){
     }
   );
 };
+$(".various").fancybox({
+    padding : 0
+  });
