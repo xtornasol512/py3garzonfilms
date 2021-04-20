@@ -12,9 +12,13 @@
 
 ### Set Enviroment Vars
 
-DJANGO_SECRET_KEY
-DEBUG_STATE
-PRODUCTION
+Load the following envs with the `export` shell command
+
+- DJANGO_SECRET_KEY
+- DEBUG_STATE
+- PRODUCTION
+- DATABASE_URL
+
 
 ### Install and run
 
