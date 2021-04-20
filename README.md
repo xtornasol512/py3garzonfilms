@@ -9,12 +9,23 @@
 * Heroku app
 * git
 
+
+### Set Enviroment Vars
+
+Load the following envs with the `export` shell command
+
+- DJANGO_SECRET_KEY
+- DEBUG_STATE
+- PRODUCTION
+- DATABASE_URL
+
+
 ### Install and run
 
 1. Install a virtualenv with python3
-`$ python -m virtualenv .venv/dj3`
+`$ python3 -m venv .dj3 `
 2. Run the environment
-`$ source .venv/dj3/bin/activate`
+`$ source .dj3/bin/activate`
 3. Install requirements.txt
 `$ pip install -r requirements.txt`
 4. Stand up the development server

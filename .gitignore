@@ -7,4 +7,6 @@ config/
 *.sqlite3
 */__pycache__/
 garzonfilms/staticfiles/
+.env
+.dj3/
 
